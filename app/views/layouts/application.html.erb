@@ -8,6 +8,99 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+      <style>
+    /* Ensure page takes full height */
+    html, body {
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body styling */
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background: linear-gradient(90deg, #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913);
+      font-family: "Helvetica";
+      color: rgba(255, 255, 255, 1.0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+/*
+* {
+  border: 1px red dashed;
+}
+*/
+    /* Container to center-align content */
+    .main-container {
+      max-width: 640px;
+      margin: auto;
+      text-align: center;
+    }
+
+    /* Styling for avatar image */
+    .avatar-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    /* Name styling */
+    .name-row {
+      font-size: 24px;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    /* Social icon row styling */
+    .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Add space between icons */
+    }
+
+    /* Link styling */
+    a {
+      color: rgba(255, 255, 255, 1.0);
+      text-decoration: none;
+    }
+
+    /* Item box styling */
+    .item {
+      background-color: rgba(149, 123, 173, 0.5);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-radius: 1000px;
+      box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+    # background-color: rgba(149, 123, 173, 0.5);
+    # border-radius: 1000px;
+    # padding: 5px;
+    # padding-right: 53px;
+    }
+
+    /* Thumbnail styling */
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    /* Centering link text */
+    .link-text {
+      flex-grow: 1;
+      text-align: center;
+    }
+  </style>
+  
   </head>
 
   <body>
